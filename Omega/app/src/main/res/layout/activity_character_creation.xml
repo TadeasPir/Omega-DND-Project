@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CharacterCreation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="Character name"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="-37dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Race"
+            app:layout_constraintBottom_toTopOf="@+id/textRace"
+            app:layout_constraintStart_toStartOf="@+id/textRace" />
+
+        <EditText
+            android:id="@+id/textExperiencePoints"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCharacterName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Background "
+            app:layout_constraintBottom_toTopOf="@+id/textBackground"
+            app:layout_constraintStart_toStartOf="@+id/textBackground" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class and level"
+            app:layout_constraintBottom_toTopOf="@+id/textClassLevel"
+            app:layout_constraintStart_toStartOf="@+id/textClassLevel" />
+
+        <EditText
+            android:id="@+id/textClassLevel"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.268"
+            app:layout_constraintStart_toEndOf="@+id/textExperiencePoints"
+            app:layout_constraintTop_toBottomOf="@+id/textCharacterName" />
+
+        <Button
+            android:id="@+id/throwsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Throws"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.903" />
+
+        <EditText
+            android:id="@+id/textAlignment"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toEndOf="@+id/textPlayerName"
+            app:layout_constraintTop_toBottomOf="@+id/textRace" />
+
+        <EditText
+            android:id="@+id/textBackground"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textExperiencePoints" />
+
+        <EditText
+            android:id="@+id/textRace"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textBackground"
+            app:layout_constraintTop_toBottomOf="@+id/textClassLevel" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alignment"
+            app:layout_constraintBottom_toTopOf="@+id/textAlignment"
+            app:layout_constraintStart_toStartOf="@+id/textAlignment" />
+
+        <EditText
+            android:id="@+id/textPlayerName"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textBackground" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player name"
+            app:layout_constraintBottom_toTopOf="@+id/textPlayerName"
+            app:layout_constraintStart_toStartOf="@+id/textPlayerName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ExperiencePoints"
+            app:layout_constraintBottom_toTopOf="@+id/textExperiencePoints"
+            app:layout_constraintStart_toStartOf="@+id/textExperiencePoints" />
+
+        <EditText
+            android:id="@+id/textCharacterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Character name"
+            app:layout_constraintBottom_toTopOf="@+id/textCharacterName"
+            app:layout_constraintStart_toStartOf="@+id/textCharacterName" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="Save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPlayerName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
